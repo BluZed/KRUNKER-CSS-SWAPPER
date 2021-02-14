@@ -3,7 +3,7 @@ let request = chrome.webRequest.onBeforeRequest;
 chrome.runtime.getPackageDirectoryEntry((root) => {
     let reader = root.createReader();
     reader.readEntries((results) => {
-        searchDir(root, results.filter(x => !['init.js', 'manifest.json', 'README.txt', 'LICENSE', '.git'].includes(x.name)));
+        searchDir(root, results.filter(x => !['init.js', 'manifest.json', 'README.md', 'LICENSE', '.git'].includes(x.name)));
     });
 });
 

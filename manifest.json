@@ -1,0 +1,21 @@
+{
+	"name": "KRUNKER-CSS-SWAPPER",
+	"version": "1.0",
+	"manifest_version": 2,
+        "icons": { "128": "icon_128.png" },
+	"description": "by BluZed#4944 on Discord",
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"https://krunker.io/*",
+		"https://assets.krunker.io/*",
+		"http://127.0.0.1:8080/*",
+	    "https://www.google.com/*"
+	],
+	"web_accessible_resources": [
+		"*.css"
+	],
+	"background": {
+		"scripts": ["init.js"]
+	}
+}
